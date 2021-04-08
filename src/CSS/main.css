@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Job card style */
+.card_body {
+    background-color: #fafafa;
+    padding: 20px;
+    font-family: 'Montserrat','sans-serif';
+}
+.card_title {
+    font-size: 22px;
+    font-weight: 700;
+}
+.card_subtitle {
+    font-size: 12px;
+}
+.tags_div {
+    display: flex;
+    overflow-x: scroll;
+}
+.tags_div::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+  }
+  
+  /* Track */
+  .tags_div::-webkit-scrollbar-track {
+    background: #fafafa; 
+  }
+   
+  /* Handle */
+  .tags_div::-webkit-scrollbar-thumb {
+    background: lightgrey; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  .tags_div::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.job_tag {
+    background-color: #e2d3de;
+    font-size: 12px;
+    font-weight: 600;
+    padding:6px 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: #6F4165;
+    min-width: 130px;
+    text-align: center;
+}
+.location_text {
+    font-size: 12px;
+    padding-left: 5px;
+}
+.card_description {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.card_description::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .card_description::-webkit-scrollbar-track {
+    background: #fafafa; 
+  }
+   
+  /* Handle */
+  .card_description::-webkit-scrollbar-thumb {
+    background: lightgrey; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  .card_description::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.about_publisher {
+    font-size: 12px;
+    margin:6px 0;
+}
+.apply_button {
+    background-color: #86BA40;
+    color:white;
+    font-weight: 700;
+    font-size: 14px;
+    border:0;
+    padding:4px 16px;
+    border-radius: 50px;
+}
+.apply_button:hover {
+    color:white;
+    text-decoration: none;
+}
+/* Company screen styling */
+.company_cover {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    mix-blend-mode: multiply;
+}
+.company_card {
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+.company_left_block {
+    display: flex;
+
+}
+.company_detail h1 {
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+    color:white;
+    font-size: 30px;
+    padding:10px 0;
+    margin:0;
+}
+.company_detail span {
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+    color:white;
+    font-size: 16px;
+}
+.company_body_heading {
+    text-align: center;
+    padding:20px 0;
+    font-family: 'Montserrat',sans-serif;
+}
+/* company listing style */
+.company_sm_card {
+    border:1px solid grey;
+    position: relative;
+    background-image: url('../Assets//background_image.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.company_sm_detail h1{
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+    color:white;
+    font-size: 18px;
+}
+.company_sm_detail span {
+    font-weight: 400;
+    font-family: 'Montserrat',sans-serif;
+    color:white;
+    font-size: 14px;
+}
+.card_com_sm_detail {
+    display: flex;
+}
+.jobs_block {
+    background:#fafafa;
+    flex:1;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 10px;
+}
+.number_jobs{
+    font-size: 32px;
+}
+.company_sm_des {
+    font-weight: 400;
+    font-family: 'Montserrat',sans-serif;
+}
+.loader {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .spinner {
+    height: 3.5vh;
+    width: 3.5vh;
+    border: 6px solid #6F4165;
+    border-top-color: white;
+    border-radius: 100%;
+    animation: rotation 0.6s infinite linear 0.25s;
+
+  
+    /* the opacity is used to lazyload the spinner, see animation delay */
+    /* this avoid the spinner to be displayed when visible for a very short period of time */
+    opacity: 0;
+  }
+  
+  @keyframes rotation {
+    from {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(359deg);
+    }
+  }
